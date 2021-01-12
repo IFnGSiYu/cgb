@@ -1,14 +1,33 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
-import Home from '../views/Home.vue'
+// import Home from '../views/Home.vue'
+import Ipad1 from '../views/Ipad1.vue'
+import Ipad2 from '../views/Ipad2.vue'
+import Ipad3 from '../views/Ipad3.vue'
+import ShowPage from '../views/ShowPage.vue'
 
 Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: '/ipad1',
+    name: 'Ipad1',
+    component: Ipad1
+  },
+  {
+    path: '/ipad2',
+    name: 'Ipad2',
+    component: Ipad2
+  },
+  {
+    path: '/ipad3',
+    name: 'Ipad3',
+    component: Ipad3
+  },
+  {
+    path: '/show',
+    name: 'ShowPage',
+    component: ShowPage
   },
   {
     path: '/about',
